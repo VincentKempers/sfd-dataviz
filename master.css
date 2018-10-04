@@ -1,5 +1,9 @@
+.home {
+    background-image: url("imgs/backgroundstars.png");
+}
+
 .section {
-    background-color: black;
+    background-color:black; 
     color: white;
     display: flex;
     flex-direction: column;
@@ -9,5 +13,4 @@
 
 .section > h1 {
     text-align: center;
-
 }
