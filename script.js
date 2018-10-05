@@ -8,11 +8,3 @@ $(document).ready(function () {
         scrollingSpeed: 1000
     });
 });
-
-$(document).on('click', '#secNext', function () {
-    $.fn.fullpage.moveSectionDown();
-});
-
-$(document).on('click', '#turnOff', function () {
-    $.fn.fullpage.setAllowScrolling(false);
-});

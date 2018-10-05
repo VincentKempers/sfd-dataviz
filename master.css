@@ -1,16 +1,48 @@
-.home {
-    background-image: url("imgs/backgroundstars.png");
+.section {
+    background-color:black;
+    color: white;
 }
 
-.section {
-    background-color:black; 
+.home {
+    background-image: url("imgs/backgroundstars.png");
+    flex-direction: column;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.section > h1 {
+.home > h1 {
     text-align: center;
 }
+
+.thecards > img {
+    margin-right: 2em;
+}
+        
+.edward ul {
+    margin: 0;  
+    padding-top: 2em; 
+    list-style: none; 
+}
+
+.edward p {
+    max-width: 40em;
+}
+
+.side-pos {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-pos > ul, .side-pos > div , .side-pos >svg {
+    margin: 2em;
+}
+
+.side-pos > ul {
+    width: 24em;
+}
+
+
+
+
