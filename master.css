@@ -40,7 +40,24 @@
 }
 
 .side-pos > ul {
-    width: 24em;
+    list-style: none;
+}
+
+a {
+    color:white;
+}
+
+a:active{
+    color:white
+}
+
+#cardReader {
+    width: 40%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
 
