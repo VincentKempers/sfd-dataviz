@@ -1,10 +1,12 @@
 * {
   margin: 0;
+  background-color: black;
 }
 
 .section {
   background-color: black;
   color: white;
+  /* margin: 1em 0 0 0.5em; */
 }
 
 .home {
@@ -15,18 +17,30 @@
   align-items: center;
 }
 
-.home > h1 {
+h1 {
   text-align: left;
   font-size: 10em;
-  margin: 0;
+}
+
+p {
+  font-size: 1.3em;
+  max-width: 40em;
+  margin: 1em;
+}
+
+p > strong {
+  color: black;
+  background-color: white;
+  padding: 0 0.2em 0 0.2em;
 }
 
 .thecards {
   flex-direction: row;
+  margin-top: 2em;
 }
 
 .thecards > img {
-  margin-right: 2em;
+  padding-right: 2em;
 }
 
 /* John Edwards */
