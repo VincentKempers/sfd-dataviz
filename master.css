@@ -1,10 +1,13 @@
+* {
+  margin: 0;
+}
+
 .section {
   background-color: black;
   color: white;
 }
 
 .home {
-  background-image: url("imgs/backgroundstars.png");
   flex-direction: column;
   color: white;
   display: flex;
@@ -13,7 +16,9 @@
 }
 
 .home > h1 {
-  text-align: center;
+  text-align: left;
+  font-size: 10em;
+  margin: 0;
 }
 
 .thecards {
@@ -23,6 +28,8 @@
 .thecards > img {
   margin-right: 2em;
 }
+
+/* John Edwards */
 
 .edward ul {
   margin: 0;
@@ -39,14 +46,12 @@
   flex-direction: row;
 }
 
-.side-pos > ul,
-.side-pos > div,
-.side-pos > svg {
-  margin: 2em;
-}
-
 .side-pos > ul {
   list-style: none;
+}
+
+.side-pos > h1 {
+  font-size: 13em;
 }
 
 a {
