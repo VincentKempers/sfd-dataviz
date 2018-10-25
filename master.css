@@ -24,10 +24,11 @@
 h1 {
   text-align: left;
   font-size: 9em;
+  /* max-width: 9em; */
 }
 
 p {
-  /* font-size: 1.1em; */
+  font-size: 1.1em;
   max-width: 40em;
   margin: 1em;
 }
@@ -38,7 +39,7 @@ p > strong {
   padding: 0 0.2em 0 0.2em;
 }
 
-.home > video {
+.mediaBackground {
   height: 100vh;
   position: absolute;
   z-index: 0;
@@ -113,13 +114,59 @@ p > strong {
   }
 }
 
+.cardList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardList > h1 {
+  font-size: 6em;
+  z-index: +1;
+}
+
 .thecards {
   flex-direction: row;
+  justify-content: center;
   margin-top: 2em;
+  z-index: +1;
 }
 
 .thecards > img {
   padding-right: 2em;
+}
+
+ol > li {
+  cursor: pointer;
+}
+
+.split-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.split-view > section:nth-child(2) {
+  padding: 1em;
+}
+
+.split-view > section:nth-child(2) > ol {
+  color: white;
+}
+
+.split-view > section:nth-child(2) > ol > li > p {
+  background-color: white;
+  color: black;
+  padding: 0.5em;
+}
+
+.invisible {
+  display: none;
+}
+
+#mediumBackgroundImg {
+  transition: 1s ease-in;
 }
 
 /* John Edwards */
