@@ -1,27 +1,24 @@
 (function() {
   let app = {
     init() {
-      this.fullpage();
-      this.googleChart();
-    },
-    fullpage() {
-      fullpageSetup.init();
+      changeSRC.init();
     },
     googleChart() {
       googleChartSetup.init();
     }
   };
 
-  let fullpageSetup = {
+  let changeSRC = {
     init() {
-      $(document).ready(function() {
-        $("#fullpage").fullpage({
-          // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-          anchors: ["start", "themediums"],
-          autoScrolling: true,
-          scrollOverflow: false,
-          verticalCentered: false,
-          scrollingSpeed: 1000
+      let allItems = document.querySelector(".thecards").children;
+      let imageSrc = document.querySelector("#mediumBackgroundImg");
+      let htmlValues = Object.values(allItems);
+      htmlValues.forEach(i => {
+        i.addEventListener("mouseover", event => {
+          setTimeout(function() {
+            imageSrc.src = `imgs/${event.target.classList}.png`;
+            console.log(event);
+          }, 100);
         });
       });
     }
