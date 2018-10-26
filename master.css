@@ -161,6 +161,15 @@ ol > li {
   padding: 0.5em;
 }
 
+.split-view > section:nth-child(2) > ul {
+  list-style: none;
+}
+
+.split-view > section:nth-child(2) > ul > li > details > summary {
+  background-color: white;
+  color: black;
+}
+
 .invisible {
   display: none;
 }
