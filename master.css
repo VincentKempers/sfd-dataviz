@@ -30,7 +30,6 @@ h1 {
 p {
   font-size: 1.1em;
   max-width: 40em;
-  margin: 1em;
 }
 
 p > strong {
@@ -147,27 +146,39 @@ ol > li {
   justify-content: space-between;
 }
 
+.split-view > section:nth-child(1) > p {
+  margin: 1em;
+}
+
 .split-view > section:nth-child(2) {
   padding: 1em;
 }
 
-.split-view > section:nth-child(2) > ol {
+.split-view > section:nth-child(2) > ul {
+  list-style: none;
+  width: 40em;
   color: white;
 }
 
-.split-view > section:nth-child(2) > ol > li > p {
+.split-view > section:nth-child(2) > ul > li {
+  width: 100%;
+  margin: 0.3em 0 0.3em 0;
+}
+
+.split-view > section:nth-child(2) > ul > li > details {
   background-color: white;
   color: black;
   padding: 0.5em;
 }
 
-.split-view > section:nth-child(2) > ul {
-  list-style: none;
-}
-
 .split-view > section:nth-child(2) > ul > li > details > summary {
   background-color: white;
   color: black;
+  font-size: 1.2em;
+}
+
+.tv-medium > p {
+  margin: 1em;
 }
 
 .invisible {
