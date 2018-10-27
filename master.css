@@ -121,7 +121,13 @@ p > strong {
 }
 
 .cardList > img:first-of-type {
-  filter: invert(1);
+  filter: grayscale(1);
+  width: 100vw;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: all 1s ease-in;
 }
 
 .cardList > h1 {
@@ -129,19 +135,8 @@ p > strong {
   z-index: +1;
 }
 
-.thecards {
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 2em;
-  z-index: +1;
-}
-
-.thecards > img {
-  padding-right: 2em;
-}
-
-ol > li {
-  cursor: pointer;
+.tv-medium > p {
+  margin: 1em;
 }
 
 .split-view {
@@ -186,16 +181,29 @@ ol > li {
   font-weight: bolder;
 }
 
-.tv-medium > p {
-  margin: 1em;
+.thecards {
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2em;
+  z-index: +1;
+}
+
+.thecards > a {
+  margin: 0em 1em 0 1em;
+}
+
+.thecards > a:hover > img {
+  box-shadow: 0px 0px 40px black;
+  width: 18em;
+  transition: height 0.7s ease-in-out;
+}
+
+ol > li {
+  cursor: pointer;
 }
 
 .invisible {
   display: none;
-}
-
-#mediumBackgroundImg {
-  transition: 1s ease-in;
 }
 
 /* John Edwards */

@@ -168,31 +168,34 @@
             <img id="mediumBackgroundImg" class="mediaBackground" src="imgs/john-edward.png" alt="">
             <h1>De meest bekende tv mediums</h1>
             <div class="thecards">
-                <a href="jamesvanpraagh.html"><img class="james-v-praagh" src="imgs/jamesvpraagh.svg" alt=""> </a>
-                <a href="jedward.html"> <img class="john-edward" src="imgs/johnedward.svg" alt=""></a>
-                <a href="misscleo.html"><img class="miss-cleo" src="imgs/misscleo.svg" alt=""></a>
-                <a href="hollywoodmedium.html"><img class="hollywood-medium" src="imgs/hollywoodmedium.svg" alt=""></a>
+                <a href="jamesvanpraagh.html"><img class="james-v-praagh" src="imgs/jamesvpraagh.png" alt=""></a>
+                <a href="jedward.html"> <img class="john-edward" src="imgs/johnedward.png" alt=""></a>
+                <a href="misscleo.html"><img class="miss-cleo" src="imgs/misscleo.png" alt=""></a>
+                <a href="hollywoodmedium.html"><img class="hollywood-medium" src="imgs/hollywoodmedium.png" alt=""></a>
             </div>
         </div>
         <div class="section fullStory">
             <h1>The Whole Timeline</h1>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.extensions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.js"></script>
     <script src="script.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#fullpage").fullpage({
-                // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-                anchors: ["home", "what-is-cold-reading", "tv-and-mediums", "pick-your-card", "full-timeline"],
-                autoScrolling: true,
-                scrollOverflow: false,
-                verticalCentered: false,
-                scrollingSpeed: 1000
-            });
-        });</script>
+
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ["home", "what-is-cold-reading", "tv-and-mediums", "pick-your-card", "full-timeline"],
+            autoScrolling: true,
+            scrollOverflow: true,
+            verticalCentered: false,
+            scrollingSpeed: 1000,
+            lazyLoad: true
+        });
+
+        //methods
+        fullpage_api.setAllowScrolling(true);
+
+
+    </script>
 </body>
 
 </html>
