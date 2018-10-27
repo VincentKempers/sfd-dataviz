@@ -15,10 +15,8 @@
       let htmlValues = Object.values(allItems);
       htmlValues.forEach(i => {
         i.addEventListener("mouseover", event => {
-          setTimeout(function() {
-            imageSrc.src = `imgs/${event.target.classList}.png`;
-            console.log(event);
-          }, 100);
+          imageSrc.src = `imgs/${event.target.classList[0]}.png`;
+          console.log(event.target.classList[0]);
         });
       });
     }

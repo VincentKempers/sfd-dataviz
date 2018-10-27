@@ -120,6 +120,10 @@ p > strong {
   align-items: center;
 }
 
+.cardList > img:first-of-type {
+  filter: invert(1);
+}
+
 .cardList > h1 {
   font-size: 6em;
   z-index: +1;
@@ -171,10 +175,15 @@ ol > li {
   padding: 0.5em;
 }
 
+.split-view > section:nth-child(2) > ul > li > details > p {
+  padding-left: 0.5em;
+}
+
 .split-view > section:nth-child(2) > ul > li > details > summary {
   background-color: white;
   color: black;
   font-size: 1.2em;
+  font-weight: bolder;
 }
 
 .tv-medium > p {
