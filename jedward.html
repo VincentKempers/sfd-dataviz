@@ -115,10 +115,21 @@
         <p>Volgens onze standaarden is hij nog super rijk! Hij verdient van een platform dat goed loopt. </p>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.extensions.min.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.js"></script>
+    <script src="script.js"></script>
+    <script>
+
+      var myFullpage = new fullpage('#fullpage', {
+        anchors: ["home", "what-is-cold-reading", "tv-and-mediums", "pick-your-card", "full-timeline"],
+        autoScrolling: true,
+        scrollOverflow: true,
+        verticalCentered: false,
+        scrollingSpeed: 1000,
+        lazyLoad: true
+      });
+      fullpage_api.setAllowScrolling(true);
+
+    </script>
     <script src="script.js"></script>
 
   </body>
