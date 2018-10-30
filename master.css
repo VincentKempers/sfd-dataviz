@@ -220,42 +220,14 @@ ol > li {
 
 /* John Edwards */
 
-.edward ul {
-  margin: 0;
-  padding-top: 2em;
-  list-style: none;
+.medium-intro-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.edward p {
-  max-width: 40em;
-}
-
-.side-pos {
-  display: flex;
-  flex-direction: row;
-}
-
-.side-pos > ul {
-  list-style: none;
-}
-
-.side-pos > h1 {
-  font-size: 13em;
-}
-
-a {
-  color: white;
-}
-
-a:active {
-  color: white;
-}
-
-#cardReader {
-  width: 40%;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
+.medium-intro-image > img {
+  width: 40em;
+  position: relative;
+  filter: grayscale(1);
 }
