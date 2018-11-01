@@ -14,6 +14,7 @@
     <div id="fullpage">
       <div class="section edward">
         <h1>John Edward</h1>
+        <canvas id="timeChart" width="500" height="500"></canvas>
         <div class="medium-intro-image">
           <img src="imgs/johnedwardcutout.png" alt="john edward">
         </div>
@@ -100,13 +101,12 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.com/libraries/Chart.js"></script>
     <script>
 
       var myFullpage = new fullpage('#fullpage', {
         anchors: ["home", "what-is-cold-reading", "tv-and-mediums", "pick-your-card", "full-timeline"],
         autoScrolling: true,
-        scrollOverflow: true,
         verticalCentered: false,
         scrollingSpeed: 1000,
         lazyLoad: true
