@@ -39,6 +39,16 @@ p > strong {
   padding: 0 0.2em 0 0.2em;
 }
 
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: underline white;
+}
+
 .mediaBackground {
   height: 100vh;
   position: absolute;
@@ -157,6 +167,8 @@ p > strong {
   list-style: none;
   width: 40em;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
 .split-view > section:nth-child(2) > ul > li {
@@ -171,7 +183,8 @@ p > strong {
 }
 
 .split-view > section:nth-child(2) > ul > li > details > p {
-  padding-left: 0.5em;
+  padding-top: 0.5em;
+  padding-left: 1em;
 }
 
 .split-view > section:nth-child(2) > ul > li > details > summary {
