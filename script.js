@@ -1,8 +1,8 @@
 (function() {
   let app = {
     init() {
-      changeSRC.init();
       timeChart.init();
+      changeSRC.init();
     }
   };
 
@@ -41,7 +41,7 @@
     ],
     ctx: document.getElementById("timeChart").getContext("2d"),
     init() {
-      var myChart = new myChart(ctx, {
+      var myChart = new Chart(this.ctx, {
         type: "bar",
         data: {
           labels: this.labels,
