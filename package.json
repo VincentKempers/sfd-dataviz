@@ -1,0 +1,25 @@
+{
+  "name": "sfd-dataviz",
+  "version": "1.0.0",
+  "description": "[link to project](https://vincentkempers.github.io/sfd-dataviz/#start)",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "test": "text",
+    "start": "node server.js",
+    "server": "http-server ~/code/sfd-dataviz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincentKempers/sfd-dataviz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VincentKempers/sfd-dataviz/issues"
+  },
+  "homepage": "https://github.com/VincentKempers/sfd-dataviz#readme"
+}
