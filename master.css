@@ -249,3 +249,14 @@ ol > li {
   position: relative;
   filter: grayscale(1);
 }
+
+.show-year {
+  text-align: right;
+  position: absolute;
+  right: 0;
+}
+
+#timeChart {
+  width: 50em !important;
+  height: 22em !important;
+}
