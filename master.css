@@ -35,6 +35,7 @@ p {
   font-size: 1.1em;
   line-height: 1.6em;
   max-width: 40em;
+  padding-left: 0.8em;
 }
 
 p > strong {
@@ -239,7 +240,7 @@ ol > li {
 
 .medium-intro-image {
   position: absolute;
-  right: 0;
+  right: -12em;
   bottom: 0;
 }
 
