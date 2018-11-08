@@ -1,8 +1,8 @@
 (function() {
   let app = {
     init() {
-      timeChart.init();
       changeSRC.init();
+      timeChart.init();
     }
   };
 
@@ -10,6 +10,7 @@
     init() {
       let allItems = document.querySelector(".thecards").children;
       let imageSrc = document.querySelector("#mediumBackgroundImg");
+console.log(allItems);
       let htmlValues = Object.values(allItems);
       htmlValues.forEach(i => {
         i.addEventListener("mouseover", event => {
@@ -33,7 +34,7 @@
       "rgba(54, 162, 235, 1)",
       "rgba(255, 206, 86, 1)"
     ],
-    ctx: document.getElementById("timeChart").getContext("2d"),
+    ctx: document.getElementById("timeChart"),
     init() {
       var myChart = new Chart(this.ctx, {
         type: "bar",
