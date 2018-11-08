@@ -202,7 +202,7 @@ a:active {
 .thecards {
   flex-direction: row;
   justify-content: center;
-align-items: center;
+  align-items: center;
   margin-top: 2em;
   z-index: +1;
 }
@@ -260,4 +260,27 @@ ol > li {
 #timeChart {
   width: 50em !important;
   height: 22em !important;
+}
+ul {
+  list-style: none;
+}
+
+.answers {
+  position: absolute;
+}
+
+.answers > li {
+  background-color: white;
+  color: black;
+  padding: 1em;
+}
+
+.answers > li:nth-of-type(even) {
+  right: 0;
+  position: fixed;
+}
+
+.answers > li:nth-of-type(odd) {
+  left: 0;
+  position: fixed;
 }
