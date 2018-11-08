@@ -3,3 +3,10 @@
 
 ## A Datavisualization about television mediums.
 
+## Targets
+
+- [x] John Edward
+- [ ] James van Praag
+- [ ] Miss Cleo
+- [ ] Hollywood Medium
+- [ ] Long Island Medium
