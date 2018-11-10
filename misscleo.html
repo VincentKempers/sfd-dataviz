@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="master.css" />
     <title>Document</title>
   </head>
 
   <body>
+    <div class="section home">
+      <h1>Miss Cleo</h1>
+      <p>Miss Cleo een "jamaicaanse" medium die uit LA komt.</p>
+      <img src="" alt="" />
+    </div>
+    <div class="section">
+      <h1>Call now! network</h1>
+      <p>
+        Miss cleo zat bij Call now network. Voor dat zij op tv kwam had Call Now
+        network het idee om mensen aan te nemen die "mediums" waren. Zij zagen
+        hier geld in omdat onwijs veel mensen belde naar het netwerk. Het werd
+        zo populair dat zij meer mediums nodig hadden. Waarbij een sollicitatie
+        uit werd geschoten met de woorden:
+      </p>
 
+      <span class="excerpt">"No psychic experience necessary".</span>
+
+      <p>
+        De verdiensten van Call now! stegen de pan uit. hun verdiende 25 miljoen
+        per maand en zeker met Miss Cleo dat jaar kregen zij een netto omzet van
+        600 miljoen. Ongeacht een gigantische rechtzaak hebben zij zoveel geld
+        weten binnen te harken, dat mensen die daar werkte zeiden dat ze
+        diamanten dipte in goud.
+      </p>
+    </div>
+    <div class="section">
+      <h1>LA of Jamaica</h1>
+      <p>
+        Miss cleo was anders dan alle mediums binnen het netwerk. Zij had een
+        jamaicaans accent en had de meest gigantische openbaringen. Bijvoorbeeld
+        het weten van wie het kind was.
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/oxopPDMq7rs"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script>
+      var myFullpage = new fullpage("#fullpage", {
+        anchors: [
+          "home",
+          "what-is-cold-reading",
+          "tv-and-mediums",
+          "pick-your-card",
+          "full-timeline"
+        ],
+        autoScrolling: true,
+        verticalCentered: false,
+        scrollingSpeed: 1000,
+        lazyLoad: true
+      });
+      fullpage_api.setAllowScrolling(true);
+    </script>
+    <script src="questionnaire.js"></script>
+    <script src="script.js"></script>
   </body>
-
 </html>
