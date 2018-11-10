@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>James van Praagh</title>
   </head>
 
   <body>
-
+    <div class="section home">
+      <h1>James van Praagh</h1>
+      <img src="" alt="" />
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script>
+      var myFullpage = new fullpage("#fullpage", {
+        anchors: [
+          "home",
+          "what-is-cold-reading",
+          "tv-and-mediums",
+          "pick-your-card",
+          "full-timeline"
+        ],
+        autoScrolling: true,
+        verticalCentered: false,
+        scrollingSpeed: 1000,
+        lazyLoad: true
+      });
+      fullpage_api.setAllowScrolling(true);
+    </script>
+    <script src="questionnaire.js"></script>
+    <script src="script.js"></script>
   </body>
-
 </html>
