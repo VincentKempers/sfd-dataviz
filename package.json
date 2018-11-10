@@ -5,12 +5,14 @@
   "main": "server.js",
   "dependencies": {},
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "ngrok": "^3.1.0"
   },
   "scripts": {
     "test": "text",
     "start": "node server.js",
-    "server": "http-server ~/code/sfd-dataviz"
+    "server": "http-server ~/code/sfd-dataviz",
+    "share": "ngrok http 8080"
   },
   "repository": {
     "type": "git",
