@@ -2,8 +2,8 @@
   let app = {
     init() {
       questionnaire.init();
-      changeSRC.init();
       timeChart.init();
+      changeSRC.init();
     }
   };
 
@@ -54,4 +54,3 @@
   // app starts here ..
   app.init();
 })();
-
