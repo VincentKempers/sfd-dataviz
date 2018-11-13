@@ -14,3 +14,5 @@ let changeSRC = (function() {
     }
   };
 })();
+
+console.log('vim rules')
