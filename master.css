@@ -269,6 +269,51 @@ ul {
   bottom: 0;
 }
 
+/* glitch button
+
+*/
+
+.textbutton {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  z-index: +2;
+  border: 2px solid white;
+  padding: 0.5em 2em 0.5em 2em;
+  margin-top: 2em;
+}
+
+.textbutton > span:before,
+.textbutton > span:after {
+  content: attr(data-content);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  opacity: 0.7;
+  padding: 1.2em 6em 1.2em 6em;
+}
+.textbutton > span:before {
+  border: 2px solid #00aaff;
+  color: #00aaff;
+  z-index: -2;
+}
+.textbutton > span:after {
+  border: 2px solid #ff00ff;
+  color: #ff00ff;
+  z-index: -3;
+}
+.textbutton:hover span:before {
+  -webkit-animation: glitchy 1s ease infinite;
+  animation: glitchy 1s ease infinite;
+}
+.textbutton:hover span:after {
+  -webkit-animation: glitchy 1s ease both infinite;
+  animation: glitchy 1s ease both infinite reverse;
+}
+
+/* answers  */
 .answers {
   position: absolute;
 }
