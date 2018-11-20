@@ -27,7 +27,7 @@
 
 h1 {
   text-align: left;
-  font-size: 9em;
+  font-size: 7em;
 }
 
 p {
@@ -206,6 +206,8 @@ a:active {
   width: 100%;
 }
 
+/* bekende tv mediums */
+
 .thecards {
   flex-direction: row;
   justify-content: center;
@@ -235,6 +237,8 @@ a:active {
   height: 17rem;
   transition: all 1s ease-in-out;
 }
+
+/* hmmm?  */
 
 ol > li {
   cursor: pointer;
