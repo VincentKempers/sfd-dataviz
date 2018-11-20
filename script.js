@@ -3,7 +3,6 @@
     init() {
       questionnaire.init();
       timeChart.init();
-      changeSRC.init();
     }
   };
 
