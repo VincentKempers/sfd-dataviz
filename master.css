@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "cracked-font";
-  src: url("fonts/cracked-code.ttf");
+  font-family: "VCR-font";
+  src: url("fonts/VCR_OSD_MONO_1.001.ttf");
 }
 
 * {
@@ -26,6 +26,7 @@
 }
 
 h1 {
+  font-family: "VCR-font";
   text-align: left;
   font-size: 7em;
 }
@@ -74,7 +75,7 @@ a:active {
   position: relative;
   display: inline-block;
   text-align: center;
-  font-family: "cracked-font";
+  font-family: "VCR-font";
   font-size: 5em;
   text-decoration: none;
   color: #fff;
@@ -82,7 +83,7 @@ a:active {
 }
 
 .text-link > span {
-  font-family: "cracked-font";
+  font-family: "VCR-font";
 }
 
 .text-link:before,
@@ -198,12 +199,14 @@ a:active {
   font-weight: bolder;
 }
 
-.tv-mediums > section:nth-child(2) {
-  max-width: 40em;
+.tv-and-mediums > video {
+  filter: opacity(50%);
 }
 
-.tv-mediums > section:nth-child(2) > video {
-  width: 100%;
+.tv-and-mediums > p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  z-index: +1;
 }
 
 /* bekende tv mediums */
