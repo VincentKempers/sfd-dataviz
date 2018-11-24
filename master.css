@@ -69,6 +69,7 @@ a:active {
   margin: 2em;
   max-width: 40em;
   text-align: center;
+  background-color: rgba();
 }
 
 .text-link {
@@ -136,18 +137,14 @@ a:active {
   align-items: center;
 }
 
-.cardList > img:first-of-type {
-  filter: grayscale(1);
-  width: 100vw;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .cardList > h1 {
   font-size: 6em;
   z-index: +1;
+}
+
+.thecards {
+  position: absolute;
+  bottom: 0;
 }
 
 .tv-medium > p {
@@ -158,6 +155,7 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 3em;
 }
 
 .split-view > section:nth-child(1) > p {
@@ -220,20 +218,20 @@ a:active {
 }
 
 .thecards > a {
-  margin: 0em 1em 0 1em;
+  margin: 0em 2em 0 2em;
   padding-top: 1em;
 }
 
 .thecards > a > img {
-  height: 17rem;
+  height: 20rem;
   box-shadow: none;
   transition: all 1s ease-in-out;
+  filter: grayscale(1);
 }
 
 .thecards > a:hover > img {
-  transition: all 0.5s ease-in-out;
-  box-shadow: 0px 0px 40px black;
-  height: 18em;
+  transition: all 0.3s ease-in-out;
+  height: 22em;
 }
 
 .thecards > a:hover::after > img {
