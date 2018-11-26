@@ -3,9 +3,23 @@
   src: url("fonts/VCR_OSD_MONO_1.001.ttf");
 }
 
+@font-face {
+  font-family: "VCR-font";
+  src: url("fonts/VCR_OSD_MONO_1.001.ttf");
+}
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
+    local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"),
+    local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
 * {
   margin: 0;
-  font-family: "Avenir Next", sans-serif;
+  font-family: "system", sans-serif;
 }
 
 .section {
@@ -130,6 +144,24 @@ a:active {
   }
 }
 
+.info-med {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: left;
+  margin-top: 2em;
+}
+
+.info-med > ul {
+  max-width: 50em;
+  align-items: left;
+}
+
+.info-med > ul > li:first-of-type {
+  font-family: "VCR-font";
+  font-size: 8em;
+}
+
 .cardList {
   display: flex;
   flex-direction: column;
@@ -220,6 +252,7 @@ a:active {
 .thecards > a {
   margin: 0em 2em 0 2em;
   padding-top: 1em;
+  height: 20rem;
 }
 
 .thecards > a > img {
