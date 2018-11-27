@@ -86,4 +86,3 @@
   };
   changeSRC.init();
 })();
-console.log("vim rules");
