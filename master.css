@@ -75,15 +75,17 @@ a:active {
 }
 
 .home > h1,
-.home > h2 {
+.home > h3 {
   z-index: +1;
 }
 
-.home > h2 {
+.home > h3 {
   margin: 2em;
   max-width: 40em;
   text-align: center;
-  background-color: rgba();
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  font-style: italic;
 }
 
 .text-link {
