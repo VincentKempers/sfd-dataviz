@@ -44,6 +44,7 @@ h1 {
   text-align: left;
   font-size: 8em;
   margin-bottom: 0.2em;
+  text-transform: uppercase;
 }
 
 p {
@@ -114,7 +115,7 @@ a:active {
   display: inline-block;
   text-align: center;
   font-family: "VCR-font";
-  font-size: 5em;
+  font-size: 7em;
   text-decoration: none;
   color: #fff;
   z-index: +1;
@@ -245,6 +246,11 @@ article > section:nth-child(2) > ul > li > details > summary {
   font-size: 8em;
 }
 
+.info-med > ul > li:nth-of-type(2) {
+  text-align: center;
+  font-size: 2em;
+}
+
 .cardList {
   display: flex;
   flex-direction: column;
@@ -254,17 +260,16 @@ article > section:nth-child(2) > ul > li > details > summary {
 }
 
 .thecards {
-  position: absolute;
-  bottom: 0;
-}
-
-.thecards {
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 2em;
   z-index: +1;
   max-width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .thecards > a {
@@ -280,9 +285,14 @@ article > section:nth-child(2) > ul > li > details > summary {
   filter: grayscale(1);
 }
 
+.thecards > a:active > img {
+  filter: grayscale(0);
+}
+
 .thecards > a:hover > img {
   transition: all 0.3s ease-in-out;
   height: 22em;
+  filter: grayscale(0);
 }
 
 .thecards > a:hover::after > img {
@@ -320,10 +330,6 @@ ol > li {
   right: 0;
 }
 
-#timeChart {
-  width: 50em !important;
-  height: 22em !important;
-}
 ul {
   list-style: none;
 }
@@ -333,9 +339,7 @@ ul {
   bottom: 0;
 }
 
-/* glitch button
-
-*/
+/* glitch button */
 
 .textbutton {
   position: relative;
