@@ -176,6 +176,7 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  z-index: +1;
 }
 
 .split-view > section:nth-child(1) > p {
@@ -450,4 +451,16 @@ ul {
   font-size: 6em;
   position: absolute;
   bottom: 0;
+}
+
+.showPrices > p {
+  max-width: 30em;
+  margin-top: 1em;
+  align-items: left;
+}
+
+.showPrices > h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
