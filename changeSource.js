@@ -15,6 +15,7 @@
       ],
       tv: [],
       networth: "200.6 miljoen",
+      slogan: "Rijkste medium op het moment",
       audio: ""
     },
     johnE: {
@@ -37,6 +38,7 @@
         "EVOLVE (internet show)"
       ],
       networth: "3 miljoen",
+      slogan: "Koudste lezer die er is",
       audio: ""
     },
     missC: {
@@ -50,6 +52,7 @@
         "Mind and spirit"
       ],
       networth: "1 miljoen",
+      slogan: "Geboren in Los Angeles maar net  uit Jamaica?",
       audio: ""
     },
     hollywoodM: {
@@ -58,6 +61,7 @@
       books: ["Between Two Worlds: Lessons from the other side"],
       tv: ["Hollywood medium"],
       networth: "3 miljoen",
+      slogan: "Glamour medium ontmaskert",
       audio: ""
     }
   };
@@ -76,9 +80,8 @@
           infoPlace.innerHTML = `
           <ul>
             <li> ${rightMedium.name}</li>
-            <li>Netto waarde: ${rightMedium.networth}</li>
-          </ul>
-          
+            <li><strong> ${rightMedium.slogan}</strong></li>
+          </ul>          
           `;
         });
       });
