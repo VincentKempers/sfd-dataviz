@@ -42,7 +42,8 @@
 h1 {
   font-family: "VCR-font";
   text-align: left;
-  font-size: 7em;
+  font-size: 8em;
+  margin-bottom: 0.2em;
 }
 
 p {
@@ -50,6 +51,7 @@ p {
   line-height: 1.6em;
   max-width: 40em;
   padding-left: 0.8em;
+  z-index: +1;
 }
 
 p > strong {
@@ -72,6 +74,30 @@ a:active {
   height: 100vh;
   position: absolute;
   z-index: 0;
+  filter: opacity(60%);
+}
+
+.cold {
+  z-index: +1;
+  max-width: 40em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cold:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cold > p {
+  margin: 0.5em;
+}
+
+.cold > span {
+  max-width: 40em;
+  font-size: 80%;
 }
 
 .home > h1,
@@ -189,7 +215,6 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 3em;
 }
 
 .split-view > section:nth-child(1) > p {
@@ -200,7 +225,7 @@ a:active {
   padding: 1em;
 }
 
-.split-view > section:nth-child(2) > ul {
+article > section:nth-child(2) > ul {
   list-style: none;
   width: 40em;
   color: white;
@@ -208,23 +233,23 @@ a:active {
   margin: 0;
 }
 
-.split-view > section:nth-child(2) > ul > li {
+article > section:nth-child(2) > ul > li {
   width: 100%;
   margin: 0.3em 0 0.3em 0;
 }
 
-.split-view > section:nth-child(2) > ul > li > details {
+article > section:nth-child(2) > ul > li > details {
   background-color: white;
   color: black;
   padding: 0.5em;
 }
 
-.split-view > section:nth-child(2) > ul > li > details > p {
+article > section:nth-child(2) > ul > li > details > p {
   padding-top: 0.5em;
   padding-left: 1em;
 }
 
-.split-view > section:nth-child(2) > ul > li > details > summary {
+article > section:nth-child(2) > ul > li > details > summary {
   background-color: white;
   color: black;
   font-size: 1.2em;
@@ -403,12 +428,8 @@ ul {
 
 .container {
   display: flex;
-  position: absolute;
   flex-direction: row;
   justify-content: center;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .container > div {
@@ -423,4 +444,15 @@ ul {
 }
 .container > div > img > p {
   text-align: center;
+}
+
+/* JAMES VAN PRAAGH */
+
+.edward > h2,
+.praagh > h2,
+.missCleo > h2 {
+  font-family: "VCR-font";
+  font-size: 6em;
+  position: absolute;
+  bottom: 0;
 }
