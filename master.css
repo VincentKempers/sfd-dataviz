@@ -448,7 +448,7 @@ ul {
 .praagh > h2,
 .missCleo > h2 {
   font-family: "VCR-font";
-  font-size: 6em;
+  font-size: 5em;
   position: absolute;
   bottom: 0;
 }
@@ -462,9 +462,8 @@ ul {
   margin-top: 1em;
   align-items: left;
 }
-/* 
-.showPrices > h1 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-} */
+
+.excerpt {
+  margin: 1em;
+  font-size: 2em;
+}
