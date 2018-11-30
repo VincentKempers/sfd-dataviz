@@ -42,7 +42,7 @@
 h1 {
   font-family: "VCR-font";
   text-align: left;
-  font-size: 8em;
+  font-size: 7em;
   margin-bottom: 0.2em;
   text-transform: uppercase;
 }
@@ -64,11 +64,11 @@ p > strong {
 a,
 a:visited {
   color: white;
-  text-decoration: none;
+  text-decoration: underline white;
 }
 a:hover,
 a:active {
-  text-decoration: underline white;
+  text-decoration: none;
 }
 
 .mediaBackground {
@@ -453,14 +453,18 @@ ul {
   bottom: 0;
 }
 
+.praagh > p {
+  margin: 1em;
+}
+
 .showPrices > p {
   max-width: 30em;
   margin-top: 1em;
   align-items: left;
 }
-
+/* 
 .showPrices > h1 {
   position: absolute;
   bottom: 0;
   right: 0;
-}
+} */
